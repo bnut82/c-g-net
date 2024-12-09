@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Challenge.Contracts\Challenge.Contracts.csproj" />
+      <ProjectReference Include="..\Challenge.Core\Challenge.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Parser\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Parser\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Parser\**" />
+    </ItemGroup>
+
+</Project>
